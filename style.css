@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin-top: 100px 0;
 }
 
 h1,
@@ -32,10 +32,6 @@ p {
   line-height: 1.5;
 }
 
-img {
-  max-width: 100%;
-}
-
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -54,7 +50,10 @@ img {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-  text-align: center;
+}
+
+.primary-link:hover {
+  color: white;
 }
 
 .secondary-link {
@@ -94,27 +93,23 @@ img {
 }
 
 @media (max-width: 576px) {
-  h2,
-  p,
-  .primary-link,
-  .mt-5 {
-    text-align: center;
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
   }
 
   h2 {
     font-size: 32px;
+    text-align: center;
   }
 
-  .primary-link {
-    display: block;
-    margin: 0 20px;
+  p {
+    text-align: center;
   }
 
-  .mt-5 {
+  .project-link {
     display: block;
+    text-align: center;
     margin: 0 20px;
-  }
-  .d-sm-block {
-    display: none;
   }
 }
